@@ -1,7 +1,10 @@
+import Introduction from "../components/Introduction";
+
 const Home = () =>
 {
     return (
         <>
+            <Introduction />
         </>
     );
 }

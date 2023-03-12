@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import Site from './Site';
 
+/** Global CSS */
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/globals.scss';
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
