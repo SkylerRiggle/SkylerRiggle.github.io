@@ -1,17 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 const Site = () =>
 {
     return (
-        <>
-            Hello World
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<p>Hello World!</p>} />
-                    <Route path="/test" element={<p>Hello Test!</p>} />
-                </Routes>
-            </BrowserRouter>
-        </>
+        <HashRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/test" element={<p>Hello Test!</p>} />
+            </Routes>
+        </HashRouter>
     );
 }
 
