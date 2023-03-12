@@ -7,7 +7,6 @@ const Site = () =>
         <HashRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/test" element={<p>Hello Test!</p>} />
             </Routes>
         </HashRouter>
     );
