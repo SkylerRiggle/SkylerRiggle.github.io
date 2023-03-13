@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;' + 
 '0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+$background-gray: #1a1a1a;
+$stk-size-pos: 5px;
+$stk-size-neg: -5px;
+$stk-size-pos-sm: 3px;
+$stk-size-neg-sm: -3px;
+
 * {
     margin: 0;
     padding: 0;
@@ -9,15 +15,40 @@
 }
 
 html, body {
-    background-color: #1a1a1a;
+    background-color: $background-gray;
 }
 
 .navbar {
     width: 12vw;
+    min-width: 50px;
     max-width: 100px;
     height: 100vh;
-    margin-right: 1rem;
+    margin-right: 2rem;
 
     background-color: #101010;
     box-shadow: 5px 0 4px 0 #0a0a0a;
+}
+
+.text-stroke-lg {
+    text-shadow:
+    $stk-size-neg $stk-size-neg 0 $background-gray,
+     0   $stk-size-neg 0 $background-gray,
+     $stk-size-pos $stk-size-neg 0 $background-gray,
+     $stk-size-pos  0   0 $background-gray,
+     $stk-size-pos  $stk-size-pos 0 $background-gray,
+     0    $stk-size-pos 0 $background-gray,
+     $stk-size-neg  $stk-size-pos 0 $background-gray,
+     $stk-size-neg  0   0 $background-gray;
+}
+
+.text-stroke-sm {
+    text-shadow:
+    $stk-size-neg-sm $stk-size-neg-sm 0 $background-gray,
+     0   $stk-size-neg-sm 0 $background-gray,
+     $stk-size-pos-sm $stk-size-neg-sm 0 $background-gray,
+     $stk-size-pos-sm  0   0 $background-gray,
+     $stk-size-pos-sm  $stk-size-pos-sm 0 $background-gray,
+     0    $stk-size-pos-sm 0 $background-gray,
+     $stk-size-neg-sm  $stk-size-pos-sm 0 $background-gray,
+     $stk-size-neg-sm  0   0 $background-gray;
 }
