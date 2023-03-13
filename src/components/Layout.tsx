@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import NavBar from "./NavBar"
 
 const Layout = (props: { children: any }) =>
@@ -8,6 +9,7 @@ const Layout = (props: { children: any }) =>
             <div className="w-100 my-4 me-5" style={{marginLeft: '115px'}}>
                 {props.children}
             </div>
+            <Footer />
         </div>
     )
 }
