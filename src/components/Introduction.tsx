@@ -1,47 +1,92 @@
-import Portrait from '../images/portrait.webp';
+import { useEffect, useState } from "react";
+import Portrait from "../images/portrait.webp";
 
 const Introduction = () =>
 {
-    return (
-        <div className='d-flex flex-wrap justify-content-between w-100 h-100 mt-5 ps-2'>
-            {/** Portrait Section */}
-            <div className='w-25 p-1 end-0 position-relative' style={{minWidth:'250px', minHeight:'250px'}}>
-                <img
-                    src={Portrait}
-                    alt="Portrait"
-                    className='rounded-circle w-100'
-                    style={{
-                        filter: 'grayscale(100%)'
-                    }}
-                />
+    const [title, setTitle] = useState<string>("");
 
-                <h1
-                    className='position-absolute display-1 fw-bold text-stroke-lg text-wrap'
+    useEffect(() => {
+        const titles = ["Programmer", "Gamer", "Student", "Game Developer"];
+        var count = 0;
+        var index = 0;
+        var direction = true;
+        var pause = false;
+
+        const interval = setInterval(() => {
+            if (!pause) {
+                if (direction) {
+                    if (count + 1 > titles[index].length) {
+                        direction = false;
+                        pause = true;
+                    }
+                    else { count++; }
+                }
+                else {
+                    if (count - 1 < 0) {
+                        direction = true;
+                        pause = true;
+                        index = (index + 1) % titles.length;
+                    }
+                    else { count--; }
+                }
+
+                setTitle(titles[index].substring(0, count));
+            }
+            else
+            {
+                pause = false;
+            }
+        }, 200);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <div
+            className="bg-black w-100 p-5 d-flex flex-wrap"
+            style={{
+                minHeight: '80vh'
+            }}
+        >
+            {/** Portrait */}
+            <div className="w-50 d-flex mx-auto align-items-center mb-5">
+                <div
+                    className="rounded-circle mx-auto bg-success p-2"
                     style={{
-                        width: '50vw',
-                        left: '75%',
-                        top: '0'
+                        width:'fit-content'
                     }}
                 >
-                    Skyler Riggle
-                </h1>
+                    <div className="rounded-circle bg-black p-2">
+                        <img
+                            src={Portrait}
+                            alt="Portrait"
+                            className="rounded-circle"
+                            style={{
+                                width: '320px',
+                                height: '320px',
+                                filter: 'grayscale(100%)'
+                            }}
+                        />
+                    </div>
+                </div>
             </div>
-            
-            {/** About Me Section */}
+
+            {/** Code Block */}
             <div
-                className='d-flex flex-column justify-content-end mx-auto w-75 ps-3'
+                className="d-flex flex-column my-auto mx-auto"
                 style={{
-                    minWidth: '300px',
-                    paddingRight: '20%'
+                    minWidth: '500px'
                 }}
             >
-                <h3><u>About Me</u></h3>
-                <blockquote className='blockquote fw-light'>
-                    &emsp;Hello, my name is Skyler Riggle, and I'm a gamer, programmer, and an overall
-                    technology enthusiast. As a result, I currently study Computer Science at the University 
-                    of Oklahoma (Boomer Sooner!) and aspire to enter the video games industry to pursue my 
-                    passions. Glad to meet you!
-                </blockquote>
+                <code className="display-5 text-white">{`> Hello,`}</code>
+                <code className="display-5 text-white">{`> I'm Skyler Riggle!`}</code>
+                <code className="display-5 text-white">
+                    {`> And I'm A`}
+                    <code className="display-5 text-success">
+                        &nbsp;{title}
+                        <code className="display-5 text-marker">|</code>
+                    </code>
+                </code>
             </div>
         </div>
     );
