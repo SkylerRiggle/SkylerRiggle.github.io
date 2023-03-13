@@ -19,8 +19,10 @@ html, body {
 }
 
 .navbar {
+    position: fixed;
+
     width: 12vw;
-    min-width: 50px;
+    min-width: 75px;
     max-width: 100px;
     height: 100vh;
     margin-right: 2rem;

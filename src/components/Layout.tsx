@@ -5,7 +5,9 @@ const Layout = (props: { children: any }) =>
     return (
         <div className="d-flex">
             <NavBar />
-            {props.children}
+            <div style={{marginLeft: '125px'}}>
+                {props.children}
+            </div>
         </div>
     )
 }
