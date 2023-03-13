@@ -4,7 +4,7 @@ import NavBar from "./NavBar"
 const Layout = (props: { children: any }) =>
 {
     return (
-        <div className="d-flex">
+        <div className="d-flex flex-column">
             <NavBar />
             <div className="w-100 my-4 me-5" style={{marginLeft: '115px'}}>
                 {props.children}

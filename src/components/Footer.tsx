@@ -1,7 +1,9 @@
 const Footer = () =>
 {
     return (
-        <div></div>
+        <div className="footer">
+            Skyler Riggle | Last Updated March 2023
+        </div>
     );
 }
 

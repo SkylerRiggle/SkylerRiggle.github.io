@@ -16,6 +16,7 @@ $stk-size-neg-sm: -3px;
 
 body {
     background-color: $background-gray;
+    position: relative;
     overflow-x: hidden;
     min-width: 100vw;
     min-height: 100vh;
@@ -33,6 +34,20 @@ body {
 
     background-color: #101010;
     box-shadow: 5px 0 4px 0 #0a0a0a;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    margin-top: auto;
+    padding: 5px;
+
+    background-color: #2f2f2f;
+    box-shadow: 0 -2px 4px 0 #0a0a0a;
+    font-size: small;
+    text-align: center;
 }
 
 .text-stroke-lg {
