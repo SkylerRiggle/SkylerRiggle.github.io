@@ -1,28 +1,11 @@
-import Portrait from '../images/portrait.jpg';
+import Portrait from '../images/portrait.webp';
 
 const Introduction = () =>
 {
     return (
-        //     <div
-        //         className='position-absolute top-0'
-        //         style={{
-        //             left: '24%'
-        //         }}
-        //     >
-        //         <h1 className='display-1 fw-bold text-stroke-lg'>
-        //             Skyler Riggle
-        //         </h1>
-        //         <h2 className='display-6 fw-bold text-stroke-sm'>
-        //             &emsp;Computer Science Student
-        //         </h2>
-        //         <h2 className='display-6 fw-bold text-stroke-sm'>
-        //             &emsp;&ensp;The University of Oklahoma
-        //         </h2>
-        //     </div>
-        
-        <div className='d-flex flex-wrap w-100 bg-success'>
+        <div className='d-flex flex-wrap justify-content-between w-100 h-100 mt-5 ps-2'>
             {/** Portrait Section */}
-            <div className='bg-danger w-25 p-1 end-0' style={{minWidth:'200px', minHeight:'200px'}}>
+            <div className='w-25 p-1 end-0 position-relative' style={{minWidth:'250px', minHeight:'250px'}}>
                 <img
                     src={Portrait}
                     alt="Portrait"
@@ -31,11 +14,28 @@ const Introduction = () =>
                         filter: 'grayscale(100%)'
                     }}
                 />
+
+                <h1
+                    className='position-absolute display-1 fw-bold text-stroke-lg text-wrap'
+                    style={{
+                        width: '50vw',
+                        left: '75%',
+                        top: '0'
+                    }}
+                >
+                    Skyler Riggle
+                </h1>
             </div>
             
             {/** About Me Section */}
-            <div className='bg-primary w-75 p-1' style={{minWidth:'200px', minHeight:'200px'}}>
-                <h4><u>About Me</u></h4>
+            <div
+                className='d-flex flex-column justify-content-end mx-auto w-75 ps-3'
+                style={{
+                    minWidth: '300px',
+                    paddingRight: '20%'
+                }}
+            >
+                <h3><u>About Me</u></h3>
                 <blockquote className='blockquote fw-light'>
                     &emsp;Hello, my name is Skyler Riggle, and I'm a gamer, programmer, and an overall
                     technology enthusiast. As a result, I currently study Computer Science at the University 

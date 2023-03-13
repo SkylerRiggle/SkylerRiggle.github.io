@@ -14,12 +14,16 @@ $stk-size-neg-sm: -3px;
     color: white;
 }
 
-html, body {
+body {
     background-color: $background-gray;
+    overflow-x: hidden;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 .navbar {
     position: fixed;
+    z-index: 9999;
 
     width: 12vw;
     min-width: 75px;
