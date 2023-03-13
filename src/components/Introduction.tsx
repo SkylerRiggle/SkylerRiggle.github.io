@@ -1,7 +1,7 @@
 const Introduction = () =>
 {
     return (
-        <></>
+        <>HELLO</>
     );
 }
 

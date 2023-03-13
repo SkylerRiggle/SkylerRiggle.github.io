@@ -1,18 +1,18 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
 
-/** Pages & Components */
-import NavBar from "./components/NavBar";
+/** Pages */
 import Home from "./pages/Home";
 
 const Site = () =>
 {
     return (
         <HashRouter>
-            <NavBar />
-
-            <Routes>
-                <Route path="/" element={<Home />} />
-            </Routes>
+            <Layout>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                </Routes>
+            </Layout>
         </HashRouter>
     );
 }
