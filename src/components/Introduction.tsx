@@ -6,7 +6,7 @@ const Introduction = () =>
     const [title, setTitle] = useState<string>("");
 
     useEffect(() => {
-        const titles = ["Programmer", "Gamer", "Student", "Game Developer"];
+        const titles = ["Programmer", "Gamer", "Student", "Game Dev"];
         var count = 0;
         var index = 0;
         var direction = true;
