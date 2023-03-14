@@ -49,9 +49,9 @@ const Introduction = () =>
             }}
         >
             {/** Portrait */}
-            <div className="w-50 d-flex mx-auto align-items-center mb-5">
+            <div className="w-50 d-flex mx-auto justify-content-center align-items-center mb-5">
                 <div
-                    className="rounded-circle mx-auto bg-success p-2"
+                    className="rounded-circle bg-success p-2"
                     style={{
                         width:'fit-content'
                     }}
