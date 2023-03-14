@@ -16,12 +16,15 @@ $stk-size-neg-sm: -3px;
     color: white;
 }
 
+html, body {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background-color: $background-gray;
     position: relative;
     overflow-x: hidden;
-    min-width: 100vw;
-    min-height: 100vh;
     padding-top: 4rem;
 }
 

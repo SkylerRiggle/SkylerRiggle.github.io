@@ -43,13 +43,13 @@ const Introduction = () =>
 
     return (
         <div
-            className="bg-black w-100 p-5 d-flex flex-wrap"
+            className="bg-black w-100 p-5 d-flex justify-content-center align-items-center flex-wrap"
             style={{
                 minHeight: '80vh'
             }}
         >
             {/** Portrait */}
-            <div className="w-50 d-flex mx-auto justify-content-center align-items-center mb-5">
+            <div className="w-auto d-flex mx-auto justify-content-center align-items-center mb-3">
                 <div
                     className="rounded-circle bg-success p-2"
                     style={{
@@ -62,8 +62,8 @@ const Introduction = () =>
                             alt="Portrait"
                             className="rounded-circle"
                             style={{
-                                width: '320px',
-                                height: '320px',
+                                width: '280px',
+                                height: '280px',
                                 filter: 'grayscale(100%)'
                             }}
                         />
@@ -72,18 +72,13 @@ const Introduction = () =>
             </div>
 
             {/** Code Block */}
-            <div
-                className="d-flex flex-column my-auto mx-auto"
-                style={{
-                    minWidth: '500px'
-                }}
-            >
+            <div className="d-flex flex-column w-75 my-auto mx-auto ps-5">
                 <code className="display-5 text-white">{`> Hello,`}</code>
                 <code className="display-5 text-white">{`> I'm Skyler Riggle!`}</code>
                 <code className="display-5 text-white">
-                    {`> And I'm A`}
+                    {`> And I'm A `}
                     <code className="display-5 text-success">
-                        &nbsp;{title}
+                        {title}
                         <code className="display-5 text-marker">|</code>
                     </code>
                 </code>
