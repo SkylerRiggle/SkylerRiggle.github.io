@@ -26,6 +26,7 @@ body {
     position: relative;
     overflow-x: hidden;
     padding-top: 4rem;
+    padding-bottom: 3rem;
 }
 
 .navbar {
@@ -57,4 +58,8 @@ body {
     0% {color: white;}
     50% {color: transparent;}
     100% {color: white;}
+}
+
+.bg-accent {
+    background-color: $accent-gray;
 }
