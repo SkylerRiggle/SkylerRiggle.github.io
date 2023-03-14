@@ -1,6 +1,6 @@
-import Contact from "../components/Contact";
-import Highlights from "../components/Highlights";
-import Introduction from "../components/Introduction";
+import Contact from "../components/Home Page/Contact";
+import Highlights from "../components/Home Page/Highlights";
+import Introduction from "../components/Home Page/Introduction";
 
 const Home = () =>
 {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Portrait from "../images/portrait.webp";
+import Portrait from "../../images/portrait.webp";
 
 const Introduction = () =>
 {

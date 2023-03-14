@@ -1,4 +1,4 @@
-import Logo from "../images/logo.webp";
+import Logo from "../../images/logo.webp";
 
 const NavBar = () =>
 {
