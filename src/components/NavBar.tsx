@@ -11,7 +11,7 @@ const NavBar = () =>
                         alt="Logo"
                         height="50rem"
                         style={{
-                            filter: 'drop-shadow(0 0 5px green)'
+                            filter: 'drop-shadow(-3px 2px 0 gray)'
                         }}
                     />
                     &ensp;Skyler Riggle
