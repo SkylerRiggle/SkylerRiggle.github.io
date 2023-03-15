@@ -1,9 +1,9 @@
 import GBL from '../../images/projects/gbl-banner.webp';
-import ENG from '../../images/projects/eng-committee.svg';
+import ENG from '../../images/projects/eng-committee.webp';
 import CTC from '../../images/projects/ctc.webp';
 import battle from '../../images/projects/battle-ball.webp';
 import Speculum from '../../images/projects/speculum.webp';
-import NONO from '../../images/projects/eng-committee.svg';
+import NONO from '../../images/projects/eng-committee.webp';
 
 const HighlightCard = (props:
     {
