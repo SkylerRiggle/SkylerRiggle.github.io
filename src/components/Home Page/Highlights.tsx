@@ -73,10 +73,10 @@ const Highlights = () =>
                     subTitle="OU GDA Showcase Event"
                     imageSrc={CTC}
                     href=""
-                    description="A club I am involved with was asked to attend and host
-                    a panel during the Anime Oklahoma convention. For this event, I developed
-                    Capture The Cow! A fun game where competing players battle to score points
-                    while flying clunky physics-based UFOs."
+                    description="A club I am involved with was asked to host a panel 
+                    during the Anime Oklahoma convention. For this event, I developed
+                    Capture The Cow! A fun game where competing players battle to score 
+                    points while flying clunky physics-based UFOs."
                 />
                 {/** Number 4 */}
                 <HighlightCard
