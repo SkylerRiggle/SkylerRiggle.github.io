@@ -19,8 +19,7 @@ const Contact = () =>
 {
     return (
         <>
-            <h1 className="display-4 w-100 text-center">Contact Me</h1>
-            <hr className="mt-0 w-75 mx-auto" />
+            <h1 className="w-100 text-center">Contact Me</h1>
             
             <div className="d-flex w-100 justify-content-center m-3">
                 {/** Contact Blurb */}

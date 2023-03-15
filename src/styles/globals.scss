@@ -63,3 +63,24 @@ body {
 .bg-accent {
     background-color: $accent-gray;
 }
+
+.item-card {
+    width: 20rem;
+    height: 25rem;
+    background-color: #1a1a1a;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 0 black;
+    transition: 0.25s;
+}
+
+.item-card:hover {
+    transform: scale(1.01) translateY(-5px);
+    box-shadow: 0 5px 15px 0 black;
+    cursor: pointer;
+}
+
+.card-image {
+    background-position: center;
+    background-size: cover;
+    height: 12rem;
+}
