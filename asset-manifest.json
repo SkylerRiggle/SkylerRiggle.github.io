@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b16ee10b.css",
-    "main.js": "/portfolio/static/js/main.7bae49e3.js",
+    "main.css": "/portfolio/static/css/main.9830e272.css",
+    "main.js": "/portfolio/static/js/main.cd38bdd4.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/eng-committee.svg": "/portfolio/static/media/eng-committee.36e4d27de3c60e2be55fe68f65bd1d8d.svg",
+    "static/media/ctc.webp": "/portfolio/static/media/ctc.ef2078dd67c104869236.webp",
     "static/media/portrait.webp": "/portfolio/static/media/portrait.74e66da4237e599f7aa6.webp",
+    "static/media/gbl-banner.webp": "/portfolio/static/media/gbl-banner.dac1544a5a9252d7e4f1.webp",
+    "static/media/battle-ball.webp": "/portfolio/static/media/battle-ball.a3511fa84f906b930c36.webp",
+    "static/media/speculum.webp": "/portfolio/static/media/speculum.4d207193250e68a6e710.webp",
     "index.html": "/portfolio/index.html",
     "static/media/logo.webp": "/portfolio/static/media/logo.161218750b9c82f6f3f5.webp",
-    "main.b16ee10b.css.map": "/portfolio/static/css/main.b16ee10b.css.map",
-    "main.7bae49e3.js.map": "/portfolio/static/js/main.7bae49e3.js.map",
+    "main.9830e272.css.map": "/portfolio/static/css/main.9830e272.css.map",
+    "main.cd38bdd4.js.map": "/portfolio/static/js/main.cd38bdd4.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b16ee10b.css",
-    "static/js/main.7bae49e3.js"
+    "static/css/main.9830e272.css",
+    "static/js/main.cd38bdd4.js"
   ]
 }
