@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Modal } from 'react-bootstrap';
+import Modal from 'react-bootstrap/Modal';
 import CloseButton from 'react-bootstrap/esm/CloseButton';
 import highlightCardData from '../../data/HighlightCardData';
 
@@ -7,14 +7,47 @@ export interface HighlightCardProps
 {
     title: string;
     subTitle?: string;
+    date: string;
     imageSrc: string;
     description?: string;
+    longDescription: string;
+    resources: { href: string, text?: string }[];
 }
 
 const HighlightModal = (props: HighlightCardProps) =>
 {
     return (
-        <>{props.title}</>
+        <>
+            <div>
+                <code className='text-white display-6'>{props.title}</code><br/>
+                <code className='text-white fs-4 text-muted fst-italic'>{props.subTitle}</code><br/>
+                <code className='text-white fs-6 text-muted fst-italic'>{props.date}</code>
+            </div>
+            <p className='fs-5'>
+                &emsp;{props.longDescription}
+            </p>
+            {
+                props.resources.length > 0 ?
+                (
+                    <>
+                        <code className='text-white fs-5'>Additional Resources:</code>
+                        {
+                            props.resources.map((data) => {
+                                return (
+                                    <li>
+                                        <a href={data.href}>
+                                            {data.text ? data.text : data.href}
+                                        </a>
+                                    </li>
+                                );
+                            })
+                        }
+                    </>
+                )
+                :
+                undefined
+            }
+        </>
     );
 }
 
@@ -73,12 +106,18 @@ const Highlights = () =>
             </div>
 
             <Modal
-                size='xl'
+                size='lg'
                 centered
                 show={isOpen}
+                className='modal-tint'
             >
-                <CloseButton onClick={() => setOpen(false)} />
-                {modalContent}
+                <div className='card-modal'>
+                    <CloseButton
+                        onClick={() => setOpen(false)}
+                        className='position-absolute top-0 end-0 m-2 bg-white'
+                    />  
+                    {modalContent}
+                </div>
             </Modal>
         </>
     );

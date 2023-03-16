@@ -18,120 +18,156 @@ const highlightCardData: HighlightCardProps[] = [
     {
         title: "Student Programmer",
         subTitle: "K20 Center's Game-Based Learning Team",
+        date: "February 2023 - Present",
         imageSrc: GBL,
         description: "Currently, I work as a Student Programmer at the " +
         "K20 Center, where I've worked on many web-development projects " +
         "such as a tool for updating content in an AR app and the game " +
-        "portal that hosts their games."
+        "portal that hosts their games.",
+        longDescription: "",
+        resources: []
     },
 
     {
         title: "Vice President & Engineering Director",
         subTitle: "OU Game Developer's Association",
+        date: "August 2021 - Present",
         imageSrc: ENG,
         description: "I am the active Vice President and Engineering " +
         "Director for the University of Oklahoma's Game Developer's " +
         "Association. In these positions I have organized many workshops, " +
-        "seminars, game jams, and general meetings."
+        "seminars, game jams, and general meetings.",
+        longDescription: "",
+        resources: []
     },
 
     {
         title: "Capture The Cow",
         subTitle: "OU GDA Showcase Event",
+        date: "December 2021",
         imageSrc: CTC,
         description: "A club I am involved with was asked to host a panel " +
         "during the Anime Oklahoma convention. For this event, I developed " +
         "Capture The Cow! A fun game where competing players battle to score " +
-        "points while flying clunky physics-based UFOs."
+        "points while flying clunky physics-based UFOs.",
+        longDescription: "",
+        resources: []
     },
 
     {
         title: "Project Speculum",
         subTitle: "Team Game Jam Project",
+        date: "January - March 2022",
         imageSrc: SPECULUM,
         description: "As a fun challenge, myself and a couple friends " +
         "developed a small jam submission where I assumed the role of " +
         "programmer. For the project, I developed a rudimentary combat " +
-        "system and various shader effects in the Unity game engine."
+        "system and various shader effects in the Unity game engine.",
+        longDescription: "",
+        resources: []
     },
 
     {
         title: "Battle Ball",
         subTitle: "Personal Game Project",
+        date: "July 2021",
         imageSrc: BATTLE,
         description: "Battle Ball was a fun personal project I developed " +
         "in the span of about 3 weeks using the Unity game engine. The game " +
         "was a 2-player in-browser game where players competed to either " +
-        "destroy the opponent's tank or score goals with the ball."
+        "destroy the opponent's tank or score goals with the ball.",
+        longDescription: "",
+        resources: []
     },
 
     {
         title: "Capture The Cow [2D]",
         subTitle: "Team Game Jam Project",
+        date: "Januray 2023",
         imageSrc: CTC2D,
         description: "For Ludum Dare 52, my wife and I decided to make " +
         "a 2D version of a previous game I made: Capture the Cow! To " +
         "challenge myself, this game was developed entirely from scratch " +
-        "using the C++ raylib library in the span of a weekend."
+        "using the C++ raylib library in the span of a weekend.",
+        longDescription: "",
+        resources: []
     },
 
     {
         title: "Okie Expedition",
         subTitle: "Team Hackathon Project",
+        date: "February 2021",
         imageSrc: OKIE,
         description: "My wife and I both participated in Hacklahoma 2021. " +
         "For this event, we decided to create a game that utilizes custom hardware, " +
         "and as a result, we developed a flappy-bird-like game that used a real model " +
-        "as its controller."
+        "as its controller.",
+        longDescription: "",
+        resources: []
     },
 
     {
         title: "Horde Space Shooter",
         subTitle: "OU GDA Showcase Event",
+        date: "September 2021",
         imageSrc: SPACE,
         description: "In the early days of OU GDA we hosted many Unity tutorials. " +
         "This space shooter project was a small project meant to teach and entertain " +
-        "students interested in game development."
+        "students interested in game development.",
+        longDescription: "",
+        resources: []
     },
 
     {
         title: "Nonogram Java Game",
         subTitle: "Personal University Game Project",
+        date: "May 2021",
         imageSrc: NONO,
         description: "For a University CS class on structures and " +
         "abstractions I created a simple nonogram puzzle game from " +
         "scratch using the JavaFX library. Related, I also created " +
         "a small edge-detection app using the same library to generate " +
-        "puzzles from images."
+        "puzzles from images.",
+        longDescription: "",
+        resources: []
     },
 
     {
         title: "Web Developer & Finance Officer",
         subTitle: "OU Hacklahoma 2022",
+        date: "August 2021 - March 2022",
         imageSrc: HACK,
         description: "Hacklahoma is the University of Oklahoma's " +
         "largest hackathon and CS event. As an organizer, I worked to secure " +
         "multiple industry and internal sponsorships, as well as help develop " +
-        "the event registration system."
+        "the event registration system.",
+        longDescription: "",
+        resources: []
     },
 
     {
         title: "3:30 Robot Spider",
         subTitle: "Personal Robotics Project",
+        date: "December 2020",
         imageSrc: R330,
         description: "For fun, my wife and I created a small hexapod spider " +
         "using a kit gifted to us by relatives. This spider, however, came with no " +
         "pre-made programming. As such, I used my abilities to create an app that allowed " +
-        "us to control the spider using a PS4 controller."
+        "us to control the spider using a PS4 controller.",
+        longDescription: "",
+        resources: []
     },
 
     {
         title: "Sky Scaler",
         subTitle: "Personal Game Project",
+        date: "June - July 2020",
         imageSrc: SKY,
         description: "Sky Scaler is a simple mobile game I can best describe as infinite " +
         "Donkey Kong. I developed this game in the summer between High School and Freshman " +
-        "year of college as an exploration into mobile app development."
+        "year of college as an exploration into mobile app development.",
+        longDescription: "",
+        resources: []
     }
 ];
 
