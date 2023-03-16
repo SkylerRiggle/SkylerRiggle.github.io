@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Modal } from 'react-bootstrap';
+import CloseButton from 'react-bootstrap/esm/CloseButton';
 import highlightCardData from '../../data/HighlightCardData';
 
 export interface HighlightCardProps
@@ -10,10 +11,10 @@ export interface HighlightCardProps
     description?: string;
 }
 
-const HighlightModal = () =>
+const HighlightModal = (props: HighlightCardProps) =>
 {
     return (
-        <>HELLO!</>
+        <>{props.title}</>
     );
 }
 
@@ -34,7 +35,7 @@ const Highlights = () =>
             <div
                 className='m-3 item-card overflow-hidden d-flex flex-column position-relative'
                 onClick={() => HandleCardClick(
-                    <HighlightModal />
+                    <HighlightModal {...props} />
                 )}
             >
                 <div className='w-100 card-image' style={{
@@ -76,6 +77,7 @@ const Highlights = () =>
                 centered
                 show={isOpen}
             >
+                <CloseButton onClick={() => setOpen(false)} />
                 {modalContent}
             </Modal>
         </>
