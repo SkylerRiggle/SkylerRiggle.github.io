@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { Modal } from 'react-bootstrap';
 import highlightCardData from '../../data/HighlightCardData';
 
 export interface HighlightCardProps
@@ -5,30 +7,50 @@ export interface HighlightCardProps
     title: string;
     subTitle?: string;
     imageSrc: string;
-    href: string;
     description?: string;
 }
 
-const HighlightCard = (props: HighlightCardProps) =>
+const HighlightModal = () =>
 {
     return (
-        <a href={props.href} className='m-3 item-card overflow-hidden d-flex flex-column position-relative'>
-            <div className='w-100 card-image' style={{
-                backgroundImage:`url(${props.imageSrc})`
-            }} />
-            <div className='p-3 w-100'>
-                <code className="fs-5 text-white mt-1 mb-0">{props.title}</code><br/>
-                <small className='fst-italic text-muted'>{props.subTitle}</small><br/>
-                <small className='text-white'>
-                    {props.description}
-                </small>
-            </div>
-        </a>
+        <>HELLO!</>
     );
 }
 
 const Highlights = () =>
 {
+    const [isOpen, setOpen] = useState<boolean>(false);
+    const [modalContent, setModalContent] = useState<JSX.Element>(<>Error</>);
+
+    const HandleCardClick = (newContent: JSX.Element) =>
+    {
+        setModalContent(newContent);
+        setOpen(true);
+    }
+
+    const HighlightCard = (props: HighlightCardProps) =>
+    {
+        return (
+            <div
+                className='m-3 item-card overflow-hidden d-flex flex-column position-relative'
+                onClick={() => HandleCardClick(
+                    <HighlightModal />
+                )}
+            >
+                <div className='w-100 card-image' style={{
+                    backgroundImage:`url(${props.imageSrc})`
+                }} />
+                <div className='p-3 w-100'>
+                    <code className="fs-5 text-white mt-1 mb-0">{props.title}</code><br/>
+                    <small className='fst-italic text-muted'>{props.subTitle}</small><br/>
+                    <small className='text-white'>
+                        {props.description}
+                    </small>
+                </div>
+            </div>
+        );
+    }
+
     return (
         <>
             <h1 className="w-100 text-center mt-4">Career Highlights</h1>
@@ -48,6 +70,14 @@ const Highlights = () =>
                     })
                 }
             </div>
+
+            <Modal
+                size='xl'
+                centered
+                show={isOpen}
+            >
+                {modalContent}
+            </Modal>
         </>
     );
 }
