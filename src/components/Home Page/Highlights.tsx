@@ -12,7 +12,7 @@ export interface HighlightCardProps
 const HighlightCard = (props: HighlightCardProps) =>
 {
     return (
-        <div className='m-3 item-card overflow-hidden d-flex flex-column'>
+        <a href={props.href} className='m-3 item-card overflow-hidden d-flex flex-column position-relative'>
             <div className='w-100 card-image' style={{
                 backgroundImage:`url(${props.imageSrc})`
             }} />
@@ -23,7 +23,7 @@ const HighlightCard = (props: HighlightCardProps) =>
                     {props.description}
                 </small>
             </div>
-        </div>
+        </a>
     );
 }
 
@@ -33,7 +33,7 @@ const Highlights = () =>
         <>
             <h1 className="w-100 text-center mt-4">Career Highlights</h1>
             <div
-                className="bg-accent mx-5 rounded mb-5 d-flex flex-wrap"
+                className="bg-accent mx-2 rounded mb-5 d-flex overflow-hidden"
                 style={{
                     boxShadow: 'inset 0 0 5px black'
                 }}
