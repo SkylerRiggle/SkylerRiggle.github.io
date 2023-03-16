@@ -77,6 +77,7 @@ const Introduction = () =>
                 <code className="display-5 text-white">{`> I'm Skyler Riggle!`}</code>
                 <code className="display-5 text-white">
                     {`> And I'm A `}
+                    <br className="text-white d-block d-md-none" />
                     <code className="display-5 text-success">
                         {title}
                         <code className="display-5 text-marker">|</code>
