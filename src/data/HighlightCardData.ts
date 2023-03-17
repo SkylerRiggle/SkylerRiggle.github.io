@@ -9,7 +9,7 @@ import OKIE from '../images/projects/okie.webp';
 import SPACE from '../images/projects/space.webp';
 import BATTLE from '../images/projects/battle-ball.webp';
 import SPECULUM from '../images/projects/speculum.webp';
-import NONO from '../images/projects/eng-committee.webp';
+import NONO from '../images/projects/nono.webp';
 import HACK from '../images/projects/hacklahoma.webp';
 import R330 from '../images/projects/r330.webp';
 import SKY from '../images/projects/sky-scaler.webp';
