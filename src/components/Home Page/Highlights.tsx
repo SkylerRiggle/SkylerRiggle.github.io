@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import CloseButton from 'react-bootstrap/esm/CloseButton';
 import highlightCardData from '../../data/HighlightCardData';
+import Carousel from '../Global/Carousel';
 
 export interface HighlightCardProps
 {
@@ -106,22 +107,15 @@ const Highlights = () =>
     return (
         <>
             <h1 className="w-100 text-center mt-4">Career Highlights</h1>
-            <div
-                className="bg-accent mx-2 rounded mb-5 d-flex flex-wrap justify-content-center mx-5 overflow-hidden"
-                style={{
-                    boxShadow: 'inset 0 0 5px black'
-                }}
-            >
-                {
-                    highlightCardData.map((data: HighlightCardProps, index: number) => {
-                        return (
-                            <HighlightCard
-                                {...data}
-                            />
-                        );
-                    })
-                }
-            </div>
+            <Carousel items={
+                highlightCardData.map((data: HighlightCardProps, index: number) => {
+                    return (
+                        <HighlightCard
+                            {...data}
+                        />
+                    );
+                })
+            } />
 
             <Modal
                 size='xl'
