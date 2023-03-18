@@ -72,7 +72,7 @@ const Introduction = () =>
             </div>
 
             {/** Code Block */}
-            <div className="d-flex flex-column w-75 my-auto mx-auto ps-5">
+            <div className="d-flex flex-column my-auto intro-padding">
                 <code className="display-5 text-white">{`> Hello,`}</code>
                 <code className="display-5 text-white">{`> I'm Skyler Riggle!`}</code>
                 <code className="display-5 text-white">

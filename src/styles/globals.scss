@@ -103,3 +103,15 @@ body {
     border-radius: 0.25rem;
     overflow: hidden;
 }
+
+.intro-padding {
+    padding-left: 2rem;
+    width: 75%;
+}
+
+@media only screen and (max-width: 768px) {
+    .intro-padding {
+      padding: 0;
+      width: 100%;
+    }
+  }
