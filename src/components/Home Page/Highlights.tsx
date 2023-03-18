@@ -6,10 +6,10 @@ import highlightCardData from '../../data/HighlightCardData';
 export interface HighlightCardProps
 {
     title: string;
-    subTitle?: string;
-    date: string;
+    subTitle: string;
+    timeFrame: string;
     imageSrc: string;
-    description?: string;
+    description: string;
     longDescription: string;
     resources: { href: string, text?: string }[];
 }
@@ -18,35 +18,53 @@ const HighlightModal = (props: HighlightCardProps) =>
 {
     return (
         <>
-            <div>
-                <code className='text-white display-6'>{props.title}</code><br/>
-                <code className='text-white fs-4 text-muted fst-italic'>{props.subTitle}</code><br/>
-                <code className='text-white fs-6 text-muted fst-italic'>{props.date}</code>
+            <div className='w-100 card-image d-flex align-items-end' style={{
+                backgroundColor: '#00000090',
+                backgroundImage: `url(${props.imageSrc})`,
+                backgroundBlendMode: 'overlay',
+                height: '15rem'
+            }}>
+                <code
+                    className='text-white display-6 fw-bold ps-2'
+                    style={{
+                        lineHeight: '3rem',
+                        textShadow: '-2px 0 5px black'
+                    }}
+                >
+                    {props.title}
+                </code>
             </div>
-            <p className='fs-5'>
-                &emsp;{props.longDescription}
-            </p>
-            {
-                props.resources.length > 0 ?
-                (
-                    <>
-                        <code className='text-white fs-5'>Additional Resources:</code>
-                        {
-                            props.resources.map((data) => {
-                                return (
-                                    <li>
-                                        <a href={data.href}>
-                                            {data.text ? data.text : data.href}
-                                        </a>
-                                    </li>
-                                );
-                            })
-                        }
-                    </>
-                )
-                :
-                undefined
-            }
+            <div className='mx-3 mt-2 mb-3'>
+                <div>
+                    <code className='text-white fs-5 text-muted fst-italic'>{props.subTitle}</code><br/>
+                    <code className='text-white fs-6 text-muted fst-italic'>{props.timeFrame}</code>
+                </div>
+                <div className='fs-5 mt-3'>
+                    <p className='d-none d-md-block'>&emsp;{props.longDescription}</p>
+                    <p className='d-block d-md-none'>&emsp;{props.description}</p>
+                </div>
+                {
+                    props.resources.length > 0 ?
+                    (
+                        <>
+                            <code className='text-white fs-5'>Additional Resources:</code>
+                            {
+                                props.resources.map((data, index) => {
+                                    return (
+                                        <li key={`Resource-${props.title}-${index}`}>
+                                            <a href={data.href}>
+                                                {data.text ? data.text : data.href}
+                                            </a>
+                                        </li>
+                                    );
+                                })
+                            }
+                        </>
+                    )
+                    :
+                    undefined
+                }
+            </div>
         </>
     );
 }
@@ -106,15 +124,16 @@ const Highlights = () =>
             </div>
 
             <Modal
-                size='lg'
+                size='xl'
                 centered
                 show={isOpen}
                 className='modal-tint'
+                onHide={() => setOpen(false)}
             >
                 <div className='card-modal'>
                     <CloseButton
                         onClick={() => setOpen(false)}
-                        className='position-absolute top-0 end-0 m-2 bg-white'
+                        className='position-absolute top-0 end-0 m-2 bg-white border border-dark'
                     />  
                     {modalContent}
                 </div>
