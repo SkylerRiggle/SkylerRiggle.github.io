@@ -24,7 +24,10 @@ const highlightCardData: HighlightCardProps[] = [
         "K20 Center, where I've worked on many web-development projects " +
         "such as a tool for updating content in an AR app and the game " +
         "portal that hosts their games.",
-        longDescription: "",
+        longDescription: "Currently, I work as a Student Programmer at the " +
+        "K20 Center, where I've worked on many web-development projects " +
+        "such as a tool for updating content in an AR app and the game " +
+        "portal that hosts their games.",
         resources: []
     },
 
@@ -37,7 +40,10 @@ const highlightCardData: HighlightCardProps[] = [
         "Director for the University of Oklahoma's Game Developer's " +
         "Association. In these positions I have organized many workshops, " +
         "seminars, game jams, and general meetings.",
-        longDescription: "EXAMPLE",
+        longDescription: "I am the active Vice President and Engineering " +
+        "Director for the University of Oklahoma's Game Developer's " +
+        "Association. In these positions I have organized many workshops, " +
+        "seminars, game jams, and general meetings.",
         resources: [
             { href: "https://sites.create.ou.edu/gamedev/", text: "OU GDA Website" }
         ]
@@ -52,7 +58,10 @@ const highlightCardData: HighlightCardProps[] = [
         "during the Anime Oklahoma convention. For this event, I developed " +
         "Capture The Cow! A fun game where competing players battle to score " +
         "points while flying clunky physics-based UFOs.",
-        longDescription: "",
+        longDescription: "A club I am involved with was asked to host a panel " +
+        "during the Anime Oklahoma convention. For this event, I developed " +
+        "Capture The Cow! A fun game where competing players battle to score " +
+        "points while flying clunky physics-based UFOs.",
         resources: []
     },
 
@@ -65,7 +74,10 @@ const highlightCardData: HighlightCardProps[] = [
         "developed a small jam submission where I assumed the role of " +
         "programmer. For the project, I developed a rudimentary combat " +
         "system and various shader effects in the Unity game engine.",
-        longDescription: "",
+        longDescription: "As a fun challenge, myself and a couple friends " +
+        "developed a small jam submission where I assumed the role of " +
+        "programmer. For the project, I developed a rudimentary combat " +
+        "system and various shader effects in the Unity game engine.",
         resources: []
     },
 
@@ -78,7 +90,10 @@ const highlightCardData: HighlightCardProps[] = [
         "in the span of about 3 weeks using the Unity game engine. The game " +
         "was a 2-player in-browser game where players competed to either " +
         "destroy the opponent's tank or score goals with the ball.",
-        longDescription: "",
+        longDescription: "Battle Ball was a fun personal project I developed " +
+        "in the span of about 3 weeks using the Unity game engine. The game " +
+        "was a 2-player in-browser game where players competed to either " +
+        "destroy the opponent's tank or score goals with the ball.",
         resources: []
     },
 
@@ -91,7 +106,10 @@ const highlightCardData: HighlightCardProps[] = [
         "a 2D version of a previous game I made: Capture the Cow! To " +
         "challenge myself, this game was developed entirely from scratch " +
         "using the C++ raylib library in the span of a weekend.",
-        longDescription: "",
+        longDescription: "For Ludum Dare 52, my wife and I decided to make " +
+        "a 2D version of a previous game I made: Capture the Cow! To " +
+        "challenge myself, this game was developed entirely from scratch " +
+        "using the C++ raylib library in the span of a weekend.",
         resources: []
     },
 
@@ -104,7 +122,10 @@ const highlightCardData: HighlightCardProps[] = [
         "For this event, we decided to create a game that utilizes custom hardware, " +
         "and as a result, we developed a flappy-bird-like game that used a real model " +
         "as its controller.",
-        longDescription: "",
+        longDescription: "My wife and I both participated in Hacklahoma 2021. " +
+        "For this event, we decided to create a game that utilizes custom hardware, " +
+        "and as a result, we developed a flappy-bird-like game that used a real model " +
+        "as its controller.",
         resources: []
     },
 
@@ -116,7 +137,9 @@ const highlightCardData: HighlightCardProps[] = [
         description: "In the early days of OU GDA we hosted many Unity tutorials. " +
         "This space shooter project was a small project meant to teach and entertain " +
         "students interested in game development.",
-        longDescription: "",
+        longDescription: "In the early days of OU GDA we hosted many Unity tutorials. " +
+        "This space shooter project was a small project meant to teach and entertain " +
+        "students interested in game development.",
         resources: []
     },
 
@@ -130,7 +153,11 @@ const highlightCardData: HighlightCardProps[] = [
         "scratch using the JavaFX library. Related, I also created " +
         "a small edge-detection app using the same library to generate " +
         "puzzles from images.",
-        longDescription: "",
+        longDescription: "For a University CS class on structures and " +
+        "abstractions I created a simple nonogram puzzle game from " +
+        "scratch using the JavaFX library. Related, I also created " +
+        "a small edge-detection app using the same library to generate " +
+        "puzzles from images.",
         resources: []
     },
 
@@ -143,7 +170,10 @@ const highlightCardData: HighlightCardProps[] = [
         "largest hackathon and CS event. As an organizer, I worked to secure " +
         "multiple industry and internal sponsorships, as well as help develop " +
         "the event registration system.",
-        longDescription: "",
+        longDescription: "Hacklahoma is the University of Oklahoma's " +
+        "largest hackathon and CS event. As an organizer, I worked to secure " +
+        "multiple industry and internal sponsorships, as well as help develop " +
+        "the event registration system.",
         resources: []
     },
 
@@ -156,7 +186,10 @@ const highlightCardData: HighlightCardProps[] = [
         "using a kit gifted to us by relatives. This spider, however, came with no " +
         "pre-made programming. As such, I used my abilities to create an app that allowed " +
         "us to control the spider using a PS4 controller.",
-        longDescription: "",
+        longDescription: "For fun, my wife and I created a small hexapod spider " +
+        "using a kit gifted to us by relatives. This spider, however, came with no " +
+        "pre-made programming. As such, I used my abilities to create an app that allowed " +
+        "us to control the spider using a PS4 controller.",
         resources: []
     },
 
@@ -168,7 +201,9 @@ const highlightCardData: HighlightCardProps[] = [
         description: "Sky Scaler is a simple mobile game I can best describe as infinite " +
         "Donkey Kong. I developed this game in the summer between High School and Freshman " +
         "year of college as an exploration into mobile app development.",
-        longDescription: "",
+        longDescription: "Sky Scaler is a simple mobile game I can best describe as infinite " +
+        "Donkey Kong. I developed this game in the summer between High School and Freshman " +
+        "year of college as an exploration into mobile app development.",
         resources: []
     }
 ];
